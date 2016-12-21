@@ -1,4 +1,5 @@
 FROM ruby:2.3.3
+EXPOSE 8888
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 RUN mkdir /mail_ruby
 WORKDIR /mail_ruby
